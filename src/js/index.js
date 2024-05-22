@@ -16,8 +16,37 @@ for (let counter = 10; counter >= 0; counter--) {
   console.log(counter);
 }
 
-const uwuNumbers = [(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)];
+const uwuNumbers = numbers => {
+  let total = 0;
 
-for (let counter = 0; counter <= uwuNumbers[]; counter++) {
-  console.log(counter);
-}
+  for (let counter = 0; counter < numbers.length; counter++) {
+    total = total + numbers[counter];
+  }
+  console.log(total);
+};
+
+uwuNumbers([1, 1, 1, 1, 1, 1, 1, 1, 1]);
+
+const aleatoryNumber = number => {
+  for (let counter = 0; counter <= 10; counter++) {
+    console.log(`${counter} x ${number} =  ${number * counter}`);
+  }
+};
+
+aleatoryNumber([4]);
+
+const aNumber = number => {
+  for (let counter = 10; counter >= 0; counter--) {
+    console.log(`${counter} x ${number} =  ${number * counter}`);
+  }
+};
+
+aNumber([4]);
+
+const twoNumbers = (number1, number2) => {
+  for (let counter = number1; counter <= number2; counter++) {
+    if (counter % 2 === 0) console.log(counter);
+  }
+};
+
+twoNumbers(2, 12);
