@@ -43,10 +43,53 @@ const aNumber = number => {
 
 aNumber([4]);
 
-const twoNumbers = (number1, number2) => {
-  for (let counter = number1; counter <= number2; counter++) {
-    if (counter % 2 === 0) console.log(counter);
+const ageYear = (year, age) => {
+  let myBirthyear = year - age;
+
+  console.log(`Naciste en el año ${myBirthyear}`);
+
+  for (let counter = 1; counter <= 25; counter++) {
+    if (counter === 1) {
+      console.log(`En el año ${myBirthyear + counter} cumpliste ${counter} año`);
+    } else {
+      console.log(`En el año ${myBirthyear + counter} cumpliste ${counter} años`);
+    }
   }
 };
 
-twoNumbers(2, 12);
+ageYear(2024, 25);
+
+const onlyEvenNumbers = (numberA, numberB) => {
+  let start;
+  let end;
+
+  if (numberA < numberB) {
+    start = numberA;
+    end = numberB;
+  } else {
+    start = numberB;
+    end = numberA;
+  }
+}
+for (let counter = start; counter <= end; counter++) {
+   if (counter % 2 === 0) console.log(counter);
+
+   onlyEvenNumbers(20, 12);
+
+
+// const twoNumbers = (number1, number2) => {
+
+//   if (number1 < number2) {
+//     for (let counter = number1; counter <= number2; counter++) {
+//       if (counter % 2 === 0) console.log(counter);
+//     }
+//   } else {
+//     for (let counter = number1; counter >= number2; counter--) {
+//       if (counter % 2 === 0) console.log(counter);
+//     }
+//   }
+// };
+
+// twoNumbers(20, 12);
+
+
